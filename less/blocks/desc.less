@@ -1,0 +1,70 @@
+.desc {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 5;
+  max-width: 100%;
+  width: 100%;
+  background: @pink url(../img/back-mobile-nomain.jpg) no-repeat 50% -67px;
+  background-size: cover;
+  min-height: 395px;
+
+  @media (min-resolution: 2dppx) {
+  	background-image: url(../img/back-mobile-nomain@2x.jpg);
+  	background-size: cover;
+  }
+}
+
+.desc__wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.desc__text {
+  font-size: 24px;
+  line-height: 33px;
+  color: @white;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 27px;
+}
+
+
+
+@media (min-width: @tablet-width) {
+	
+
+	.desc {
+		background: @pink url(../img/back-tablet-nomain.jpg) no-repeat center -111px;
+		background-size: cover;
+		min-height: 729px;
+
+		@media (min-resolution: 2dppx) {
+			background-image: url(../img/back-tablet-nomain@2x.jpg);
+			background-size: cover;
+		}
+	}
+
+	.desc__text {
+		font-size: 50px;
+		line-height: 68px;
+		margin-top: 39px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.desc {
+		background: @pink url(../img/back-desktop-nomain.jpg) no-repeat center;
+		min-height: 853px;
+
+		@media (min-resolution: 2dppx) {
+			background-size: url(../img/back-desktop-nomain@2x.png);
+		}
+	}
+
+	.desc__text {
+		margin-top: 142px;
+	}
+}

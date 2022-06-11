@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="less/normalize.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/fav16.png" sizes="16" type="image/png">
+  <link rel="icon" href="img/fav32.png" sizes="32" type="image/png">
+  <link rel="apple-touch-icon" href="img/fav152.png" sizes="152" type="image/png">
+  <link rel="manifest" href="favicons.webmanifest">
+</head>
+<body class="page__body">
+
+  <header class="page-header">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <svg class="page-header__svg-mob" fill="white" width="74" height="23" viewBox="0 0 74 23"  xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/logo-mob.svg#logotype-mob"></use>
+          </svg>
+          <svg class="page-header__svg-tab" fill="white" width="145" height="40" viewBox="0 0 145 40"  xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/logo-tab.svg#logotype-pink-tab"></use>
+          </svg>
+          <svg class="page-header__svg-desk" fill="white" width="147" height="40" viewBox="0 0 147 40" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/logo-desk.svg#logotype-pink-desktop"></use>
+          </svg>
+        </a>
+        <button class="main-nav__toggle main-nav__toggle--active" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>  
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__link--active">
+              <a class="main-nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="main-title">Фотографии пользователей</h1>
+      <section class="headline">
+        <h2 class="visually-hidden">Вступление</h2>
+        <div class="headline__group-picture">
+          <div class="headline__block-area">
+          </div>
+          <div class="headline__block-content">
+            <p class="headline-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          </div>
+        </div>
+      </section>
+      <section class="preview">
+        <h2 class="visually-hidden">Фотографии</h2>
+        <div class="preview__main-image">
+          <div class="preview__picture-block">
+              <p class="preview__paragraph">Панорама дня</p>
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img  src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Пейзаж сверху над лесом">
+              </picture>
+          </div>
+          <div class="preview__picture-content">
+            <p class="preview__author"><span class="preview__author-female">Анна</span> <span class="preview__author-time">(5 минут назад)</span></p>
+            <p class="preview__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,&nbsp;задавайте&nbsp;свои&nbsp;вопросы!</p>
+            <div class="preview__wrapper-like">
+              <span class="preview__like">
+                <picture>
+                  <img src="img/heart.svg" width="13" height="12" alt="Лайк">
+                </picture>
+              </span>
+              <p class="preview__quantity">Нравится: 215</p>
+            </div>
+          </div>
+        </div>
+        <div class="preview__wrapper">
+          <div class="preview__photo-card">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet@2x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Автомобиль">
+              </picture>
+            <div class="preview__picture-content">
+                <p class="preview__author"><span class="preview__author-female">Левон</span> <span class="preview__author-time">(5 часов назад)</span></p>
+                <p class="preview__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="preview__wrapper-like">
+                  <span class="preview__like">
+                    <picture>
+                      <img src="img/heart.svg" width="13" height="12" alt="Лайк">
+                    </picture>
+                  </span>
+                  <p class="preview__quantity">Нравится: 356</p>
+                </div>
+            </div>
+          </div>
+          <div class="preview__photo-card">
+            <div class="preview__picture">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-2-tablet@2x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Музыкальный инструмент">
+              </picture>
+            </div>
+            <div class="preview__picture-content">
+                <p class="preview__author"><span class="preview__author-female">Антон</span> <span class="preview__author-time">(12 часов назад)</span></p>
+                <p class="preview__comment">Соседи будут рады!</p>
+                <div class="preview__wrapper-like">
+                  <span class="preview__like">
+                    <picture>
+                      <img src="img/heart.svg" width="13" height="12" alt="Лайк">
+                    </picture>
+                  </span>
+                  <p class="preview__quantity">Нравится: 666</p>
+                </div>
+            </div>
+          </div>
+          <div class="preview__photo-card">
+            <div class="preview__picture">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-3-tablet@2x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Абстракция">
+              </picture>
+            </div>
+            <div class="preview__picture-content">
+              <p class="preview__author"><span class="preview__author-female">Борис</span> <span class="preview__author-time">(20 часов назад)</span></p>
+                <p class="preview__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="preview__wrapper-like">
+                  <span class="preview__like">
+                    <picture>
+                      <img src="img/heart.svg" width="13" height="12" alt="Лайк">
+                    </picture>
+                  </span>
+                  <p class="preview__quantity">Нравится: 215</p>
+                </div>
+            </div>
+          </div>
+          <div class="preview__photo-card">
+            <div class="preview__picture">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-4-tablet@2x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Кубанская бахча">
+              </picture>
+            </div>
+            <div class="preview__picture-content">
+              <p class="preview__author"><span class="preview__author-female">Сергей</span> <span class="preview__author-time">(25 часов назад)</span></p>
+                <p class="preview__comment">Самая кубанская в мире!</p>
+                <div class="preview__wrapper-like">
+                  <span class="preview__like">
+                    <picture>
+                      <img src="img/heart.svg" width="13" height="12" alt="Лайк">
+                    </picture>
+                  </span>
+                  <p class="preview__quantity">Нравится: 4</p>
+                </div>
+            </div>
+          </div>
+          <div class="preview__photo-card">
+            <div class="preview__picture">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-5-tablet@2x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Вид с верху">
+              </picture>
+            </div>
+            <div class="preview__picture-content">
+              <p class="preview__author"><span class="preview__author-female">Максим</span> <span class="preview__author-time">(40 часов назад)</span></p>
+                <p class="preview__comment">Где снег-то?</p>
+                <div class="preview__wrapper-like">
+                  <span class="preview__like">
+                    <picture>
+                      <img src="img/heart.svg" width="13" height="12" alt="Лайк">
+                    </picture>
+                  </span>
+                  <p class="preview__quantity">Нравится: 150</p>
+                </div>
+            </div>
+          </div>
+          <div class="preview__photo-card">
+            <div class="preview__picture">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-4-tablet@2x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Вид с самолёта">
+              </picture>
+            </div>
+            <div class="preview__picture-content">
+              <p class="preview__author"><span class="preview__author-female">Надежда</span> <span class="preview__author-time">(45 часов назад)</span></p>
+                <p class="preview__comment">Всем GM и взаимные лайки!</p>
+                <div class="preview__wrapper-like">
+                  <span class="preview__like">
+                    <picture>
+                      <img src="img/heart.svg" width="13" height="12" alt="Лайк">
+                    </picture>
+                  </span>
+                  <p class="preview__quantity">Нравится: 2560</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="filter">
+        <div class="filter__wrapper">
+          <div class="filter__content">
+            <p class="filter__text">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
+          <div class="filter__wrapper-regulate">
+            <div class="filter__picture">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/filter-tab-desk.jpg 1x, img/filter-tab-desk@2x.jpg 2x">
+                <img src="img/filter-mobile.jpg" srcset="img/filter-mobile@2x.jpg 2x"  alt="Дорога">
+              </picture>
+            </div>
+            <div class="filter__block-regulate">
+              <div class="filter__decorate-block">
+                <div class="filter__decorate-group">
+                  <svg class="filter__icon filter__icon--active" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="img/crop.svg#crop-icon"></use>
+                  </svg>
+                </div>
+                <div class="filter__decorate-group">
+                  <svg class="filter__icon" width="48" height="43" viewBox="0 0 48 43">
+                    <use xlink:href="img/fill.svg#fill-icon"></use>
+                  </svg>
+                </div>
+                <div class="filter__decorate-group">
+                  <svg class="filter__icon" width="32" height="32" viewBox="0 0 32 32">
+                    <use xlink:href="img/contrast.svg#contrast-icon"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="filter__group-range">
+                <div class="filter__content-range">
+                  <div class="filter__content-pic">
+                    <svg class="filter__pic-tablet" width="22" height="22" viewBox="0 0 22 22">
+                      <use xlink:href="img/crop-tablet.svg#crop-tablet-icon"></use>
+                    </svg>
+                    <svg class="filter__pic-desktop" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="img/crop.svg#crop-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="filter__block-range">
+                    <div class="filter__scale"></div>
+                    <div class="filter__toggle"></div>
+                  </div>
+                </div>
+                <div class="filter__content-range">
+                  <div class="filter__content-pic">
+                    <svg class="filter__pic-tablet" width="24" height="22" viewBox="0 0 24 22">
+                      <use xlink:href="img/fill-tablet.svg#fill-tablet-icon"></use>
+                    </svg>
+                    <svg class="filter__pic-desktop" width="48" height="43" viewBox="0 0 48 43">
+                      <use xlink:href="img/fill.svg#fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="filter__block-range range-hidden">
+                    <div class="filter__scale"></div>
+                    <div class="filter__toggle"></div>
+                  </div>
+                </div>
+                <div class="filter__content-range">
+                  <div class="filter__content-pic">
+                    <img class="filter__pic-tablet" src="img/contrast-tablet.svg" width="16" height="16">
+                    <svg class="filter__pic-desktop" width="32" height="32" viewBox="0 0 32 32">
+                      <use xlink:href="img/contrast.svg#contrast-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="filter__block-range range-hidden">
+                    <div class="filter__scale"></div>
+                    <div class="filter__toggle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__button">
+                <button class="filter__button-post" type="submit">Запостить</button>
+                <button class="filter__button-cancel">Отмена</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+      <footer class="page-footer footer-catalog">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <svg class="page-footer__svg-mob-tab" fill="@black-light" width="145" height="40" viewBox="0 0 145 40"  xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/logo-footer-mob-tab.svg#logotype-footer"></use>
+          </svg>
+          <svg class="page-footer__svg-desk" fill="@black-light" width="147" height="40" viewBox="0 0 147 40"  xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/logo-footer-desk.svg#logotype-footer-desk"></use>
+          </svg>
+        </div>
+        <div class="page-footer__social">
+          <ul class="page-footer__list">
+            <li class="page-footer__item page-footer__item--active">
+              <a class="page-footer__social-link" href="#">
+                <svg class="page-footer__icon" fill="#D22856" width="18" height="14" viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/twitter.svg#twiter-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__social-link" href="#">
+                <svg class="page-footer__icon" fill="#D22856" width="9" height="18" viewBox="0 0 9 18" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/facebook.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__social-link" href="#">
+                <svg class="page-footer__icon" fill="#D22856" width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/youtube.svg#youtube-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <div class="page-footer__copyright-wrapper">
+          <span class="page-footer__developed">Разработано</span>
+          <svg class="page-footer__academy-logo" fill="#D22856" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/html-academy.svg#academy-icon"></use>
+          </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

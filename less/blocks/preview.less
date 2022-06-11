@@ -1,0 +1,305 @@
+.preview {
+    position: relative;
+    top: -41px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    background-color: @white;
+}
+
+.preview__paragraph {
+    font-size: 12px;
+    line-height: 24px;
+    background-color: @red;
+    color: @white;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    text-transform: uppercase;
+    padding: 6px 20px;
+}
+
+.preview__picture-block {
+    position: relative;
+    font-size: 0;
+}
+
+.preview__author {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    margin-left: 17px;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.preview__main-image .preview__author {
+    line-height: 24px;
+}
+
+.preview__photo-card:nth-child(2) .preview__wrapper-like {
+    margin-top: 12px;
+}
+
+.preview__photo-card:nth-child(3) .preview__wrapper-like {
+    margin-top: 11px;
+}
+
+.preview__photo-card:nth-child(4) .preview__wrapper-like {
+    margin-top: 12px;
+}
+
+.preview__photo-card:nth-child(5) .preview__wrapper-like {
+    margin-top: 12px;
+}
+
+.preview__photo-card:nth-child(6) .preview__wrapper-like {
+    margin-top: 12px;
+}
+
+.preview__author-time {
+    text-transform: uppercase;
+}
+
+.preview__author-female {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.preview__comment {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 17px;
+    margin-bottom: 10px;
+    width: 85%;
+}
+
+.preview__quantity {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    color: @pink;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 1px;
+    margin-left: 19px;
+}
+
+.preview__like {
+    margin-left: 17px;
+}
+
+.preview__picture-content {
+    background-color: @back-grey;
+    margin: 0 20px 20px;
+    align-self: stretch;
+}
+
+.preview__photo-card:last-child .preview__picture-content {
+    margin-bottom: 0
+}
+
+.preview__picture {
+    font-size: 0;
+}
+
+.preview__main-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.preview__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.preview__photo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.preview__wrapper-like {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+
+@media (min-width: @tablet-width) {
+    .preview {
+        top: -61px;
+    }
+
+    .preview__paragraph {
+        top: 57px;
+    }
+
+    .preview__photo-card {
+        width: min-content;
+        margin-left: 20px;
+    }
+
+    .preview__like {
+        order: 3;
+    }
+
+    .preview__photo-card:nth-child(2) .preview__wrapper-like,
+    .preview__photo-card:nth-child(4) .preview__wrapper-like,
+    .preview__photo-card:nth-child(5) .preview__wrapper-like,
+    .preview__photo-card:nth-child(6) .preview__wrapper-like {
+        margin-top: 34px;
+    }
+
+    .preview__photo-card:nth-child(3) .preview__wrapper-like {
+        margin-top: 10px;
+    }
+
+    .preview__photo-card:nth-child(4) .preview__like {
+        margin-left: 151px;
+    }
+
+    .preview__photo-card:nth-child(6) .preview__like {
+        margin-left: 131px;
+    }
+
+    .preview__main-image .preview__picture-content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        margin-bottom: 50px;
+    }
+
+    .preview__main-image .preview__comment {
+        order: 3;
+        margin-left: 30px;
+    }
+
+    .preview__main-image .preview__author {
+        width: 60%;
+        margin-left: 30px;
+    }
+
+    .preview__main-image .preview__wrapper-like {
+        width: 25%;
+        margin-left: 50px;
+        margin-bottom: 0;
+        padding-top: 19px;
+    }
+
+    .preview__main-image .preview__quantity {
+        line-height: 23px;
+    }
+
+    .preview__wrapper {
+        flex-wrap: wrap;
+        
+    }
+
+    .preview__wrapper .preview__picture-content {
+        margin: 0 0 20px;
+    }
+
+    .preview__wrapper .preview__comment {
+        margin-right: 0;
+        margin-left: 30px;
+    }
+
+    .preview__wrapper .preview__author {
+        margin-right: 0;
+        margin-left: 30px;
+        margin-top: 23px;
+    }
+
+    .preview__wrapper .preview__wrapper-like {
+        padding-left: 11px;
+        padding-top: 1px;
+        margin-bottom: 23px;
+    }
+
+    .preview__wrapper .preview__like {
+        margin-left: 138px;
+
+    }
+
+    .preview__wrapper .preview__quantity {
+        padding-top: 1px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .preview {
+        top: -219px;
+    }
+
+    .preview__photo-card {
+        width: min-content;
+        margin-left: 130px;
+    }
+
+    .preview__photo-card:nth-child(2),
+    .preview__photo-card:nth-child(3),
+    .preview__photo-card:nth-child(5),
+    .preview__photo-card:nth-child(6) {
+        margin-left: 20px;
+    }
+
+    .preview__photo-card:nth-child(4),
+    .preview__photo-card:nth-child(5),
+    .preview__photo-card:nth-child(6) {
+        margin-top: 34px;
+    }
+
+    .preview__paragraph {
+        top: 54px;
+        right: 130px;
+    }
+
+    .preview__main-image .preview__picture-content {
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+
+    .preview__main-image .preview__comment {
+        flex-grow: 1;
+        margin-left: 27px;
+        margin-bottom: 9px;
+    }
+
+    .preview__main-image .preview__author {
+        margin-left: 27px;
+    }
+
+    .preview__main-image .preview__wrapper-like {
+        margin-left: 180px;
+        width: 15%;
+    }
+
+    .preview__wrapper .preview__author {
+        margin-left: 27px;
+        margin-top: 24px;
+    }
+
+    .preview__wrapper .preview__comment {
+        margin-left: 27px;
+    }
+
+    .preview__wrapper .preview__wrapper-like {
+        padding-left: 8px;
+        margin-bottom: 22px;
+    }
+
+    .preview__wrapper .preview__like {
+        margin-left: 140px;
+    }
+}

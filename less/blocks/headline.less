@@ -1,0 +1,117 @@
+.main-title {
+    max-width: 1200px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 300;
+    color: @white;
+    position: absolute;
+    z-index: 5;
+    width: 60%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 27px auto 0;
+}
+
+.headline {
+    position: relative;
+    margin: 0 auto;
+}
+
+.headline__block-area {
+    background: @pink url(../img/back-mobile-nomain.jpg) no-repeat center -67px;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    min-height: 395px;
+    margin: 0 auto;
+
+    @media (min-resolution: 2dppx) {
+    background-image: url(../img/back-mobile-nomain@2x.jpg);
+    background-size: cover;
+  }
+}
+
+.headline__block-content {
+    position: absolute;
+    top: 170px;
+    z-index: 5;
+    background-color: @white;
+    padding-bottom: 36px;
+    padding-top: 30px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.headline-text {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+    .main-title {
+        font-size: 50px;
+        line-height: 68px;
+        margin-top: 65px;
+    }
+
+    .headline-text {
+        font-size: 18px;
+    }
+
+    .headline__block-area {
+        background: @pink url(../img/back-tablet-nomain.jpg) no-repeat center -111px;
+        background-size: cover;
+        width: 100%;
+        max-width: 100%;
+        min-height: 618px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url(../img/back-tablet-nomain@2x.jpg);
+            background-size: cover;
+        }
+    }
+
+    .headline__block-content {
+        top: 329px;
+        padding-top: 73px;
+        padding-bottom: 59px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .headline__block-area {
+      background: @pink url(../img/back-desktop-nomain.jpg) no-repeat center;
+      background-size: cover;
+      width: 100%;
+      max-width: 100%;
+      min-height: 853px;
+
+      @media (min-resolution: 2dppx) {
+            background-image: url(../img/back-desktop-nomain@2x.png);
+        }
+    }
+
+    .main-title {
+        margin-top: 170px;
+        width: 40%;
+    }
+
+    .headline__block-content {
+        max-width: 100%;
+        width: 100%;
+        margin: 64px auto 0;
+        padding-top: 74px;
+        padding-bottom: 72px;
+    }
+
+    .headline-text {
+        width: 40%;
+    }
+}

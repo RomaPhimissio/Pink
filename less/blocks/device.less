@@ -1,0 +1,207 @@
+.device {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.device__wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.device__text {
+  font-size: 24px;
+  line-height: 29px;
+  color: @white;
+  font-weight: 300;
+  width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-top: 22px;
+}
+
+.device__content {
+  background: @pink url(../img/back-mobile.jpg) no-repeat 50% -67px;
+  background-size: cover;
+  min-height: 395px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/back-mobile@2x.jpg);
+    background-size: cover;
+  }
+}
+
+.device__widget {
+  background-color: @back-dark-grey;
+  padding-bottom: 17px;
+}
+
+.device__block-button {
+  text-align: center;
+  padding-top: 46px;
+}
+
+.device__button {
+  font-size: 18px;
+  line-height: 18px;
+  color: @white;
+  text-decoration: none;
+  border: 3px solid #FFFFFF;
+  border-radius: 29px;
+  padding: 12px 36px;
+}
+
+.device__button:hover {
+  color: @pink;
+  background-color: @white;
+}
+
+.device__button:active {
+  color: rgba(210, 40, 86, 0.3)
+}
+
+.device__list {
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  
+}
+
+.device__item:nth-child(1) {
+  margin-left: 58px;
+}
+
+.device__item:nth-child(2) {
+  margin-left: 35px;
+  margin-top: 6px;
+}
+
+.device__item:nth-child(3) {
+  margin-left: 35px;
+  margin-top: 12px;
+}
+
+.device__paragraph {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: @white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .device {
+    background: @pink url(../img/back-tablet.jpg) no-repeat 50% -111px;
+    min-height: 618px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/back-tablet@2x.jpg);
+      background-size: 1200px auto;
+    }
+  }
+
+  .device__img {
+    display: none;
+  }
+
+  .device__content {
+    background: inherit;
+    min-height: initial;
+    width: 320px;
+  }
+
+  .device__text {
+    font-size: 40px;
+    line-height: 48px;
+    padding-top: 93px;
+    margin-bottom: 0;
+    margin-left: 50px;
+  }
+
+  .device__button {
+    padding: 12px 45px;
+  }
+
+  .device__list {
+    margin-top: 63px;
+    margin-left: 9px;
+  }
+
+  .device__block-button {
+    text-align: initial;
+    margin-left: 20px;
+    padding-top: 48px;
+  }
+
+  .device__paragraph {
+    font-size: 18px;
+    width: 50%;
+    margin-left: 5px;
+    margin-top: 30px;
+  }
+
+  .device__widget {
+    background-color: inherit;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .device {
+    background: @pink url(../img/back-desktop.jpg) no-repeat center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/back-desktop@2x.png);
+      background-size: cover;
+    }
+  }
+
+  .device__content {
+    padding-top: 116px;
+    margin-left: 110px;
+  }
+
+  .device__text {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .device__block-button {
+    margin-left: 129px;
+    padding-top: 55px;
+  }
+
+  .device__button {
+    font-size: 21px;
+    padding: 11px 29px;
+  }
+
+  .device__list {
+    margin-top: 84px;
+    margin-left: 119px;
+  }
+
+  .device__item:nth-child(2) {
+    margin-left: 34px;
+    margin-top: 8px;
+  }
+
+  .device__item:nth-child(3) {
+    margin-left: 37px;
+  }
+
+  .device__paragraph {
+    width: 27%;
+    margin-top: 49px;
+    margin-left: 118px;
+  }
+}

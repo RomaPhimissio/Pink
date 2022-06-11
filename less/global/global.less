@@ -1,0 +1,35 @@
+body {
+  font-family: "Open Sans", "Arial", "sans-serif";
+  color: @black-light;
+  background-color: @white;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.slider__toggle {
+	width: 6px;
+	height: 6px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background-color: rgba(40, 54, 69, 0.3);
+}
+
+.slider__toggle:hover {
+	background-color: rgba(40, 54, 69, 0.6);
+}
+
+.slider__toggle:active {
+	background-color: rgba(40, 54, 69, 0.1);
+}
+
+.slider__toggle--current {
+	width: 12px;
+	height: 12px;
+	background: @white;
+	border: 3px solid @black-light;
+}
